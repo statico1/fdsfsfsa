@@ -1,0 +1,69 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local GiveSelfAll = Instance.new("TextButton")
+local KillAllButton = Instance.new("TextButton")
+
+--Properties:
+
+Frame.Parent = game.StarterGui.ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.304726183, 0, 0.227036402, 0)
+Frame.Size = UDim2.new(0, 427, 0, 315)
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(161, 161, 161)
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0210772827, 0, 0.0380952395, 0)
+Title.Size = UDim2.new(0, 409, 0, 24)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "test gui - by statico"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+GiveSelfAll.Name = "GiveSelfAll"
+GiveSelfAll.Parent = Frame
+GiveSelfAll.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
+GiveSelfAll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GiveSelfAll.BorderSizePixel = 0
+GiveSelfAll.Position = UDim2.new(0.0210772827, 0, 0.301587313, 0)
+GiveSelfAll.Size = UDim2.new(0, 409, 0, 32)
+GiveSelfAll.Font = Enum.Font.SourceSans
+GiveSelfAll.Text = "Give Self All Weapons"
+GiveSelfAll.TextColor3 = Color3.fromRGB(0, 0, 0)
+GiveSelfAll.TextScaled = true
+GiveSelfAll.TextSize = 14.000
+GiveSelfAll.TextWrapped = true
+
+KillAllButton.Name = "KillAllButton"
+KillAllButton.Parent = Frame
+KillAllButton.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
+KillAllButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KillAllButton.BorderSizePixel = 0
+KillAllButton.Position = UDim2.new(0.0210772827, 0, 0.161904767, 0)
+KillAllButton.Size = UDim2.new(0, 409, 0, 32)
+KillAllButton.Font = Enum.Font.SourceSans
+KillAllButton.Text = "Kill All (not working)"
+KillAllButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+KillAllButton.TextScaled = true
+KillAllButton.TextSize = 14.000
+KillAllButton.TextWrapped = true
+
+
+KillAllButton.MouseButton1Down:connect(function()
+	print("not working bro")
+end)
+
+GiveSelfAll.MouseButton1Down:connect(function()
+	print("scammed")
+end)
